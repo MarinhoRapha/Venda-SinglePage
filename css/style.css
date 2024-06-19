@@ -61,8 +61,7 @@ header{
 }
 
 .desktop li{
-    
-    display: inline;
+    display: inline-block;
 }
 
 .desktop li a{
@@ -125,6 +124,33 @@ nav.mobile li a{
     color: white;
     width: 100%;
 }
+
+.submenu{
+    position: absolute;
+    top: 120px;
+    display: none;
+    width: 300px;
+    padding: 8px 0;
+}
+
+.submenu ul{
+    background-color: var(--cinzao);
+}
+
+.submenu li{
+    padding: 2px 10px;
+    display: block;
+}
+.desktop li:hover{
+    .submenu{
+        display: block;
+    }
+}
+
+.desktop li a:hover{
+    text-decoration: underline var(--amarelo1) ;
+}
+
 
 /* Header */
 
@@ -460,7 +486,36 @@ footer{
 
 
 @media screen and (max-width: 1280px){  
+    .submenu{display: block;}
 
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        cursor: pointer;
+        display: block;
+    }
+
+    nav.mobile ul{
+        display: none;
+        text-align: right;
+        position: absolute;
+        top: 138px;
+        right: 0;
+        width: 32%;
+        height: 100%;
+        max-height: 250px;
+        padding: 0;
+    }
+
+    nav.mobile li{
+        padding: 10px 0;
+    }
+    nav.mobile a{
+        margin-right: 20px;
+        font-size: 24px;
+    } 
+    
     .main{
         height: 550px;
     }
