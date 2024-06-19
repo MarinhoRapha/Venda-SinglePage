@@ -1,0 +1,1122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+    box-shadow: none;
+}
+
+/* CLASSES GUIAS */
+
+:root{
+    --amarelo1: #fbb700;
+    --amarelo2: #f9bf42;
+    --amarelo3: #fead00;
+    --cinzao: #333233;  
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 0 2%;
+}
+
+/* CLASSES GUIAS */
+
+
+
+
+/* Header */
+
+header{
+    width: 100%;
+}
+
+.header1{
+    width: 100%;
+    height: 80px;
+}
+
+.header2{
+    width: 100%;
+    height: 60px    ;
+    background-color: var(--cinzao)
+}
+
+
+.desktop ul{
+    line-height: 40px;
+    float: left;
+    list-style-type: none;
+}
+
+.desktop li{
+    
+    display: inline;
+}
+
+.desktop li a{
+    font-size: 18px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.header2 p{
+    line-height: 40px;
+    color: white;
+    float: right;
+}
+
+.header1  .logo{
+    float: left;
+    width: 320px;
+}
+
+.header1 .compras{
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+    float: right;
+    width: 35px;
+    height: 35px;
+}
+
+
+nav.mobile{
+    display: none;
+    background-image: url('../images/mobile.png');
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    float: right;
+    margin: 10px;
+}
+
+nav.mobile ul{
+    text-align: right;
+    position: absolute;
+    top: 140px;
+    right: 0;
+    padding: 20px 0;
+    background-color: var(--cinzao);
+    list-style-type: none;
+    
+}
+
+nav.mobile li{
+    display: block;
+    padding: 8px 0;
+}
+
+nav.mobile li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+/* Header */
+
+
+
+
+
+
+
+
+/*  MAIN   */
+
+.main{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 800px;
+    background-color: #e9e9e9;    
+}
+
+.main .container{
+    gap: 180px;
+    display: flex;
+}
+
+.main .img{
+    background-image: url('../images/Geladeiras.png');
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    margin-top: 20px;
+    height: 500px;
+    width: 800px;
+}
+
+.main .promo1{
+    position: relative;
+    top: 90px;
+    left: 80px;
+    padding: 0 2%;
+    background-color: rgba(239, 239, 239, 0.7) ;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.main h1{
+    font-size: 5em;
+    color: var(--cinzao);
+}
+
+.main p{
+    font-size: 2em;
+    color: var(--cinzao);
+}
+
+.atrativo{
+    bottom: -36px;
+    left: 18%;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-color: var(--amarelo2);
+    margin-bottom: 30px;
+}
+
+.atrativo p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.cards{
+    background-image: url('../images/cards.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 380px;
+    width: 100%;
+}   
+
+.break{
+    background-color: var(--cinzao);
+}
+
+.break p{
+    padding: 13px 2%;
+    margin: 10px 0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.break span{
+    color: var(--amarelo3);
+    font-size: 30px;
+    text-align: center;
+}
+
+.slides{
+    padding-top: 40px;
+}
+.slides .container{
+    margin: 20px auto;
+    overflow: hidden;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.slides h2{
+    margin: 40px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.slide{
+    margin: 0 auto;
+	width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.swiper-wrapper p{
+    color: black;
+    position: relative;
+    top: 285px;
+    left: 0;
+    text-align: center;
+    margin-top: 8px;
+}
+
+div.swiper-button-prev{
+    left: -1px;
+}
+
+div.swiper-button-next{
+    right: -1px;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 350px;
+    
+}
+
+.swiper-slide2{
+    cursor: pointer;
+    margin: 0 auto;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-position: center;
+    width: 280px;
+    height: 280px;
+}
+
+section.marcas{
+    margin: 40px 0;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.card-marcas{
+    background-image: url('../images/Marcas.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    max-width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.marcas .linha{
+    margin: 25px auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--amarelo3);
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    background-color: var(--cinzao);
+}
+
+.footer1{
+    width: 100%;
+    padding: 10px 2%;
+    display: flex;
+    gap: 20%;
+}
+
+.footer1 p{
+    text-align: left;
+    margin: 20px 0;
+    color: white;
+    font-size: 20px;
+}
+
+.footer1 .texto-amarelo{
+    cursor: pointer;
+    color: var(--amarelo3);
+}
+
+.footer1 span{
+    color: white;
+}
+
+.footer2{
+    padding: 10px 2%;
+    text-align: center;
+}
+
+.footer2 h2{
+    margin: 10px;
+    color: var(--amarelo3);
+
+}
+
+.footer1 .cartao{
+    display: flex;
+    gap: 5%;
+}
+
+.cartao1{
+    width: 55px;
+    height: 35px;
+    background-image: url('../images/cartao1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cartao2{
+    width: 55px;
+    height: 35px;
+    background-image: url('../images/cartao2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px){
+    .slides{
+        padding-top: 40px;
+    }
+    .slides .container{
+        position: relative;
+        max-width: 1400px;
+    }
+    
+    .slide{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+    }
+    
+    .slide p{
+        color: black;
+        position: relative;
+        top: 390px;
+        left: 0;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1368px){
+    .slide{
+        width: 100%;
+        max-width: 690px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .slide p{
+        color: black;
+        position: relative;
+        top: 290px;
+        left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1280px){  
+
+    .main{
+        height: 550px;
+    }
+
+    .main .container{
+        gap: 120px;
+        display: flex;
+    }
+
+    .main .img{
+        background-position: left;
+        background-size: contain;
+        width: 950px;
+        height: 480px;
+    }
+
+    .main .promo1{
+        width: 450px;
+        height: 320px;
+        position: relative;
+        top: 120px;
+        left: 80px;
+    }
+
+
+    .main h1{
+        font-size: 71px;
+        color: var(--cinzao);
+    }
+    
+    .main p{
+        font-size: 25px;
+        color: var(--cinzao);
+    }
+
+    .atrativo p{
+        color: white;
+        font-size: 30px;
+        text-align: center;  
+        line-height: 45px;  
+    }
+
+    .cards{
+        background-image: url('../images/cards.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 320px;
+        width: 100%;
+    }
+    
+} 
+
+
+@media screen and (max-width: 1024px){
+    .main{
+        height: 400px;
+    }
+
+    .main .container{
+        gap: 130px;
+        display: flex;
+    }
+
+    .main .img{
+        background-position: left;
+        background-size: contain;
+        width: 450px;
+        height: 350px;
+    }
+
+    .main .promo1{
+        width: 280px;
+        height: 280px;
+        position: relative;
+        top: 70px;
+        left: 60px;
+    }
+
+
+    .main h1{
+        font-size: 55px;
+        color: var(--cinzao);
+    }
+    
+    .main p{
+        font-size: 24px;
+        color: var(--cinzao);
+    }
+
+    .atrativo{
+        bottom: -8px;
+        left: 12%;
+        position: relative;
+        width: 180px;
+        height: 50px;
+        background-color: var(--amarelo2);
+        margin-bottom: 50px;
+    }
+    
+    .atrativo p{
+        color: white;
+        font-size: 25px;
+        text-align: center;    
+}
+
+    .cards{
+        margin-bottom: 10px;
+        background-image: url('../images/cards.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 280px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 968px){
+
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        cursor: pointer;
+        display: block;
+    }
+
+    nav.mobile ul{
+        display: none;
+        text-align: right;
+        position: absolute;
+        top: 138px;
+        right: 0;
+        width: 32%;
+        height: 100%;
+        max-height: 250px;
+        padding: 0;
+    }
+
+    nav.mobile li{
+        padding: 10px 0;
+    }
+    nav.mobile a{
+        margin-right: 20px;
+        font-size: 24px;
+    }
+
+    .main{
+        height: 280px;
+    }
+    .main .container{
+        gap: 50px;
+        display: flex;
+    }
+
+    .main .img{
+        background-position: left;
+        background-size: 90% 100%;
+        overflow: hidden;
+        width: 550px;
+        height: 240px;
+    }
+
+    .main .promo1{
+        width: 180px;
+        height: 180px;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+
+    .main h1{
+        font-size: 35px;
+        color: var(--cinzao);
+    }
+    
+    .main p{
+        font-size: 14px;
+        color: var(--cinzao);
+    }
+
+    .header1  .logo{
+        float: left;
+        width: 280px;
+    }
+
+    .atrativo{
+        left: 5%;
+        position: relative;
+        width: 130px;
+        height: 40px;
+        background-color: var(--amarelo2);
+    }
+
+    .atrativo p{
+        color: white;
+        font-size: 20px;
+        text-align: center;  
+        line-height: 35px;  
+    }
+
+    .cards{
+        background-image: url('../images/cards.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 200px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .slide-wraper{
+        width: 200%;
+    }
+    
+    .slide p{
+        color: black;
+        position: relative;
+        top: 290px;
+        left: 0;
+    }
+
+    footer .container{
+        max-width: 500px;
+    }
+
+    .footer1{
+        display: block;
+        width: 100%;
+        padding: 2px 2%;
+        margin: 0 auto;
+    }
+
+    .footer1 p{
+        text-align: left;
+    }
+
+    .texto1{
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    nav.mobile ul{
+        display: none;
+        text-align: right;
+        position: absolute;
+        top: 139px;
+        right: 0;
+        width: 38%;
+        height: 27%;
+        padding: 15px 0;
+        background-color: var(--cinzao);
+        list-style-type: none;
+        
+    }
+    nav.mobile li{
+        padding: 10px 0;
+    }
+    nav.mobile a{
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .main{
+        height: 280px;
+    }
+    .main .container{
+        gap: 50px;
+        display: flex;
+    }
+
+    .main .img{
+        background-position: left;
+        background-size: 90% 100%;
+        overflow: hidden;
+        width: 450px;
+        height: 200px;
+    }
+
+    .main .promo1{
+        width: 160px;
+        height: 165px;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .main h1{
+        font-size: 35px;
+        color: var(--cinzao);
+    }
+    
+    .main p{
+        font-size: 14px;
+        color: var(--cinzao);
+    }
+
+    .header1  .logo{
+        float: left;
+        width: 280px;
+    }
+
+    .atrativo{
+        bottom: -36px;
+        left: 5%;
+        position: relative;
+        width: 130px;
+        height: 40px;
+        background-color: var(--amarelo2);
+    }
+
+    .atrativo p{
+        color: white;
+        font-size: 20px;
+        text-align: center;  
+        line-height: 35px;  
+    }
+
+    .cards{
+        background-image: url('../images/cards2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 550px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    section.marcas{
+        margin: 30px 0;
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .card-marcas{
+        background-image: url('../images/Marcas.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        max-width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    .marcas .linha{
+        margin: 25px auto;
+        max-width: 1280px;
+        width: 100%;
+        height: 3px;
+        background-color: var(--amarelo3);
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+
+    nav.mobile ul{
+        display: none;
+        text-align: right;
+        position: absolute;
+        top: 139px;
+        right: 0;
+        width: 43%;
+        height: 27%;
+        padding: 15px 0;
+        background-color: var(--cinzao);
+        list-style-type: none;
+        
+    }
+    nav.mobile li{
+        padding: 10px 0;
+    }
+    nav.mobile li a{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .main{
+        height: 280px;
+    }
+    .main .container{
+        gap: 50px;
+        display: flex;
+    }
+
+    .main .img{
+        background-position: left;
+        background-size: 90% 100%;
+        overflow: hidden;
+        width: 450px;
+        height: 200px;
+    }
+
+    .main .promo1{
+        width: 350px;
+        height: 200px;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .main h1{
+        font-size: 35px;
+        color: var(--cinzao);
+    }
+    
+    .main p{
+        font-size: 14px;
+        color: var(--cinzao);
+    }
+
+    .header1  .logo{
+        float: left;
+        width: 280px;
+    }
+
+    .atrativo{
+        bottom: -36px;
+        left: 5%;
+        position: relative;
+        width: 130px;
+        height: 40px;
+        background-color: var(--amarelo2);
+    }
+
+    .atrativo p{
+        color: white;
+        font-size: 20px;
+        text-align: center;  
+        line-height: 35px;  
+    }
+
+    .cards{
+        background-image: url('../images/cards2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 420px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 440px){
+    nav.mobile ul{
+        display: none;
+        text-align: right;
+        position: absolute;
+        top: 138px;
+        right: 0;
+        width: 50%;
+        height: 29%;
+        max-height: 200px;
+        padding: 15px 0;
+        background-color: var(--cinzao);
+        list-style-type: none;
+        
+    }
+    nav.mobile li{
+        padding: 10px 0;
+    }
+    nav.mobile li a{
+        margin-right: 12px;
+        font-size: 18px;
+    }
+
+    .main{
+        height: 280px;
+    }
+    .main .container{
+        gap: 50px;
+        display: flex;
+    }
+
+    .main .img{
+        background-position: left;
+        background-size: COVER;
+        overflow: hidden;
+        width: 750px;
+        height: 200px;
+    }
+
+    .main .promo1{
+        width: 350px;
+        height: 200px;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .main h1{
+        font-size: 35px;
+        color: var(--cinzao);
+    }
+    
+    .main p{
+        font-size: 14px;
+        color: var(--cinzao);
+    }
+
+    .header1  .logo{
+        float: left;
+        margin-top: 12px;
+        width: 280px;
+    }
+
+    .atrativo{
+        bottom: -36px;
+        left: 5%;
+        position: relative;
+        width: 130px;
+        height: 40px;
+        background-color: var(--amarelo2);
+    }
+
+    .atrativo p{
+        color: white;
+        font-size: 20px;
+        text-align: center;  
+        line-height: 35px;  
+    }
+
+    .cards{
+        background-image: url('../images/cards2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 320px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .slide{
+        margin: 0;
+        width: 280px;
+        height: 330px;
+        overflow: hidden;
+    }
+    
+    .slide p{
+        top: 270px;
+        left: -10px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    nav.mobile ul{
+        z-index: 1;
+        text-align: right;
+        position: absolute;
+        top: 138px;
+        right: 0;
+        width: 50%;
+        height: 26%;
+        padding: 15px 0;
+        background-color: var(--cinzao);
+        list-style-type: none;
+        
+    }
+    nav.mobile li{
+        padding: 10px 0;
+    }
+    nav.mobile li a{
+        font-size: 15px;
+    }
+
+    .main{
+        height: 280px;
+    }
+    .main .container{
+        gap: 50px;
+        display: flex;
+    }
+
+    .main .img{
+        background-position: left;
+        background-size: COVER;
+        overflow: hidden;
+        width: 750px;
+        height: 200px;
+    }
+
+    .main .promo1{
+        width: 350px;
+        height: 200px;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .main h1{
+        font-size: 35px;
+        color: var(--cinzao);
+    }
+    
+    .main p{
+        font-size: 14px;
+        color: var(--cinzao);
+    }
+
+    .header1  .logo{
+        float: left;
+        width: 220px;
+    }
+
+    .atrativo{
+        bottom: -36px;
+        left: 5%;
+        position: relative;
+        width: 130px;
+        height: 40px;
+        background-color: var(--amarelo2);
+    }
+
+    .atrativo p{
+        color: white;
+        font-size: 20px;
+        text-align: center;  
+        line-height: 35px;  
+    }
+
+    .cards{
+        background-image: url('../images/cards2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 280px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+
+    .swiper-slide2{
+        background-position: center;
+        margin: 0 auto;
+        width: 240px;
+        height: 240px;
+    }
+}   
